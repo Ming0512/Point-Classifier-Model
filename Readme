@@ -1,0 +1,12 @@
+# PointNet 3D Point Cloud Classifier
+This project implements a 3D point cloud classifier using the PointNet architecture. It is trained on the ModelNet10 dataset to classify 3D objects like chairs, tables, sofas, etc.
+
+What Tt's Made For:
+- To classify 3D objects using point cloud data (2048 points per object).
+- It uses PyTorch and applies data augmentation (rotation, jittering) for training.
+- The trained model is saved and can be used later for inference.
+
+How to Use:
+   - Download the `.npy` files: `points_train.npy`, `labels_train.npy`, `points_test.npy`, `labels_test.npy`.
+   - Place them in the `data/` folder inside your project directory.
+   - You can fine-tune for similar kind of dataset and save the best model parameters or simply train from scratch.
